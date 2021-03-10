@@ -2088,7 +2088,7 @@ class API
      * @return null
      * @throws \Exception
      */
-    public function chart($symbols, string $interval = "30m", callable $callback, $limit = 500)
+    public function chart($symbols, callable $callback, string $interval = "30m",  $limit = 500)
     {
         if (!is_array($symbols)) {
             $symbols = [
